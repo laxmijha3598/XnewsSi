@@ -24,15 +24,25 @@ body {
 .header img {
   height: 40px;
 }
-
-.nav-items ul {
+.nav-itmes {
   display: flex;
   gap: 1.5rem;
   list-style: none;
 }
 
-.nav-items li {
+.nav-itmes li {
   cursor: pointer;
+}
+
+#sidebar .nav-itmes {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav-itmes {
+    display: none;
+  }
 }
 
 /* Mobile menu toggle */
